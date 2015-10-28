@@ -1,0 +1,18 @@
+name = MYZENNY
+description = MyZenTheme.biz
+package = MZ
+version = VERSION
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = template.css
+
+regions[slideshow]      = Slideshow
+regions[promo]          = Promo
+regions[content_header] = Content Header
+regions[content]        = Content
+regions[content_footer] = Content Footer
+regions[sidebar_left]   = Sidebar Left
+regions[sidebar_right]  = Sidebar Right
+regions[help]           = Help
+regions[inline]         = Inline

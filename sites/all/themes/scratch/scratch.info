@@ -14,3 +14,5 @@ stylesheets[print][] = css/print.css
 
 features[] = name
 features[] = main_menu
+
+scripts[] = js/scripts.js

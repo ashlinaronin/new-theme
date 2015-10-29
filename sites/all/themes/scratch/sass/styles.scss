@@ -1,11 +1,21 @@
-/* Import Sass mixins, variables, Compass modules, etc. */
-// @import "init";
-
 /* Import Zen Grids */
 @import "zen";
+@import "zen/background";
 
 $zen-column-count: 7;
-$zen-gutter-width: 10px;
+$zen-gutter-width: 30px;
+$zen-grid-color: #ffdede !default;
+
+
+@mixin our-border() {
+  border-width: 4px;
+  border-style: dotted;
+  border-color: brown;
+}
+
+body {
+  font-family: Verdana, Arial, sans-serif;
+}
 
 .container {
   @include zen-grid-container;
@@ -13,38 +23,32 @@ $zen-gutter-width: 10px;
 
 .header {
   @include zen-grid-item(7, 1);
-
-  border-width: 1px;
-  border-style: solid;
+  @include our-border();
 }
 
 /* User login */
 .sidebar_left {
   @include zen-grid-item(2, 1);
-  border-width: 1px;
-  border-style: solid;
+  @include our-border();
 
 }
 
 .main_content {
   @include zen-clear();
   @include zen-grid-item(4, 3);
-  border-width: 1px;
-  border-style: solid;
+  @include our-border();
 
 }
 
 .sidebar_right {
   @include zen-grid-item(1, 7);
-  border-width: 1px;
-  border-style: solid;
+  @include our-border();
 
 }
 
 .footer {
   @include zen-clear();
   @include zen-grid-item(7, 1);
-  border-width: 1px;
-  border-style: solid;
+  @include our-border();
 
 }

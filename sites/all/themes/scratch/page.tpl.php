@@ -14,7 +14,7 @@
   <div id="wrapper">
 
 
-    <article class="content">
+    <article class="main_content">
       <?php print render($title_prefix); ?>
         <?php if ($title): ?><h1><?php print $title; ?></h1><?php endif; ?>
       <?php print render($title_suffix); ?>

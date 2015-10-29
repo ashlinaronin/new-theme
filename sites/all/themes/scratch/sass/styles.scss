@@ -26,12 +26,11 @@ $zen-gutter-width: 10px;
 
 }
 
-.content {
+.main_content {
   @include zen-clear();
   @include zen-grid-item(4, 3);
   border-width: 1px;
   border-style: solid;
-
 
 }
 

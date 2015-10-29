@@ -1,0 +1,51 @@
+/* Import Sass mixins, variables, Compass modules, etc. */
+// @import "init";
+
+/* Import Zen Grids */
+@import "zen";
+
+$zen-column-count: 7;
+$zen-gutter-width: 10px;
+
+.container {
+  @include zen-grid-container;
+}
+
+.header {
+  @include zen-grid-item(7, 1);
+
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* User login */
+.sidebar_left {
+  @include zen-grid-item(2, 1);
+  border-width: 1px;
+  border-style: solid;
+
+}
+
+.content {
+  @include zen-clear();
+  @include zen-grid-item(4, 3);
+  border-width: 1px;
+  border-style: solid;
+
+
+}
+
+.sidebar_right {
+  @include zen-grid-item(1, 7);
+  border-width: 1px;
+  border-style: solid;
+
+}
+
+.footer {
+  @include zen-clear();
+  @include zen-grid-item(7, 1);
+  border-width: 1px;
+  border-style: solid;
+
+}

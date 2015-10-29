@@ -5,11 +5,12 @@ engine = phptemplate
 
 
 regions[header] = Header
-regions[sidebar_first] = Right sidebar
+regions[sidebar_left] = Left sidebar
+regions[sidebar_right] = Right sidebar
 regions[content] = Content
 regions[footer] = Footer
 
-stylesheets[all][] = css/style.css
+stylesheets[all][] = css/styles.css
 stylesheets[print][] = css/print.css
 
 features[] = name

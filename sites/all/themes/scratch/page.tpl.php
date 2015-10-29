@@ -7,6 +7,8 @@
 
     <?php if ($main_menu): ?>
         <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu'))); ?>
+        <?php dpm($main_menu) ?>
+        <?php dpm("hello") ?>
     <?php endif; ?>
 
   </header>
